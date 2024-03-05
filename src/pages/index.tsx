@@ -30,8 +30,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="divider"></div>
-
       <div className="why">
         <div>
           <h2>Why VanPlan?</h2>
@@ -50,7 +48,8 @@ export default function Home() {
       <div className="pricing">
         <h2>Choose the right plan for you!</h2>
         <div className="spline__pricing">
-          <Spline scene="https://prod.spline.design/cRL376KOEecC6kvD/scene.splinecode" />
+          <Spline className="spline__pricing__desktop" scene="https://prod.spline.design/cRL376KOEecC6kvD/scene.splinecode" />
+          <Spline className="spline__pricing__mobile" scene="https://prod.spline.design/fXtoDjzLRhiOcgyV/scene.splinecode" />
         </div>
       </div>
 

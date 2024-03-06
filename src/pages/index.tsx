@@ -15,8 +15,11 @@ export default function Home() {
           width={150}
           height={50}
           alt="logo"
+          className="logo"
         />
-        <PrimaryButton content="Sign Up"/>
+        <div className="signup__button">
+          <PrimaryButton content="Sign Up"/>
+        </div>
       </header>
 
       <div className="hero">

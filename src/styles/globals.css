@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Nunito';
-  src: url('/fonts/nunito-sans-bold.woff2') format('woff2'),
-       url('/fonts/nunito-sans-regular.woff2') format('woff2');
-  /* font-weight: 400;
-  font-style: normal; */
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -266,5 +258,126 @@ footer {
   .subscribe__input {
     padding-left: 0px;
     width: 800px;
+  }
+}
+
+/* iPhone XR */
+@media only screen and (device-width : 414px) and (device-height : 896px) {
+  
+  .head {
+    justify-content: center;
+    padding: 80px 24px;
+    width: 1500px;
+  }
+
+  .signup__button {
+    display: none;
+  }
+
+  .logo {
+    height: 100px;
+    width: 400px;
+  }
+  
+  .hero {
+    width: 1500px;
+  }
+  
+  .hero h1 {
+    font-size: 80px;
+    line-height: 1.5;
+  }
+  
+  .cta__container {
+    margin-top: 5em;
+    column-gap: 5em;
+  }
+  
+  .hero__spline {
+    margin-top: 5em;
+  }
+  
+  .why {
+    width: 1500px;
+    padding-top: 24px;
+    padding-left: 160px;
+    padding-right: 80px;
+    padding-bottom: 16px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 72px;
+  }
+  
+  .why p {
+    font-size: 40px;
+    width: 27em;
+    line-height: 1.8;
+  }
+
+  .why__spline {
+    padding-top: 80px;
+    padding-left: 224px;
+  }
+  
+  .pricing {
+    width: 1500px;
+  }
+  
+  .spline__pricing {
+    padding-bottom: 40px;
+    padding-left: 400px;
+  }
+  
+  .spline__pricing__mobile {
+    display: flex;
+  }
+
+  .spline__pricing__desktop {
+    display: none;
+  }
+  
+  .subscribe {
+    width: 1500px;
+    /* padding-top: 24px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center; */
+  }
+  
+  .subscribe__input input {
+    padding-left: 32px;
+    border-radius: 16px 0px 0px 16px;
+    font-size: 40px;
+  }
+  
+  footer {
+    width: 1500px;
+    font-size: 40px;
+  }
+  
+  .primary__button{
+    padding: 16px 40px;
+    border-radius: 16px;
+    font-size: 40px;
+  }
+  
+  .secondary__button{
+    padding: 16px 40px;
+    border-radius: 16px;
+    font-size: 40px;
+    border-width: 4px;
+  }
+  
+  .subscribe__button {
+    padding: 16px 40px;
+    border-radius: 0px 16px 16px 0px;
+    font-size: 40px;
   }
 }
